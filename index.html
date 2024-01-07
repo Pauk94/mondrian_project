@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .white {
+        background-color: #f0f1ec;
+      }
+      .red {
+        background-color: #e72f24;
+        height: 414px;
+        width: 320px;
+      }
+      .black {
+        background-color: #232629;
+        width: auto;
+        height: 20px;
+      }
+      .blue {
+        background-color: #004592;
+        height: 130px;
+        width: 50px;
+        border-bottom: 10px solid black;
+      }
+      .yellow {
+        background-color: #f9d01e;
+        width: auto;
+        height: 20px;
+      }
+
+      .second {
+        grid-column: span 3;
+        width: 419;
+        height: 414;
+      }
+      .third {
+        width: 320px;
+        height: 304px;
+      }
+      .four {
+        grid-column: span 2;
+        height: 304px;
+        width: 360px;
+      }
+      .internal {
+        height: 184px;
+        width: 50px;
+      }
+      .end {
+        width: 320px;
+      }
+
+      .container {
+        display: grid;
+        width: 748px;
+        height: 748px;
+        gap: 9px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      }
+      .container2 {
+        display: grid;
+        gap: 9px;
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="red"></div>
+      <div class="white second"></div>
+      <div class="white third"></div>
+      <div class="white four"></div>
+      <div class="container2">
+        <div class="blue"></div>
+        <div class="white internal"></div>
+      </div>
+      <div class="white end"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+  </body>
+</html>
